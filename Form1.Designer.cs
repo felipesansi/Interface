@@ -38,11 +38,11 @@
             this.txt_saldo = new System.Windows.Forms.TextBox();
             this.btn_criar = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btn_exibir_saldo = new System.Windows.Forms.Button();
+            this.btn_sacar = new System.Windows.Forms.Button();
+            this.btn_depositar = new System.Windows.Forms.Button();
             this.txt_valor = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.btn_depositar = new System.Windows.Forms.Button();
-            this.btn_sacar = new System.Windows.Forms.Button();
-            this.btn_exibir_saldo = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -128,6 +128,7 @@
             this.btn_criar.TabIndex = 8;
             this.btn_criar.Text = "Criar";
             this.btn_criar.UseVisualStyleBackColor = true;
+            this.btn_criar.Click += new System.EventHandler(this.btn_criar_Click);
             // 
             // panel1
             // 
@@ -142,6 +143,39 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(359, 368);
             this.panel1.TabIndex = 9;
+            // 
+            // btn_exibir_saldo
+            // 
+            this.btn_exibir_saldo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_exibir_saldo.Location = new System.Drawing.Point(107, 182);
+            this.btn_exibir_saldo.Name = "btn_exibir_saldo";
+            this.btn_exibir_saldo.Size = new System.Drawing.Size(140, 58);
+            this.btn_exibir_saldo.TabIndex = 11;
+            this.btn_exibir_saldo.Text = "Exibir Saldo";
+            this.btn_exibir_saldo.UseVisualStyleBackColor = true;
+            this.btn_exibir_saldo.Click += new System.EventHandler(this.btn_exibir_saldo_Click);
+            // 
+            // btn_sacar
+            // 
+            this.btn_sacar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_sacar.Location = new System.Drawing.Point(155, 103);
+            this.btn_sacar.Name = "btn_sacar";
+            this.btn_sacar.Size = new System.Drawing.Size(140, 44);
+            this.btn_sacar.TabIndex = 10;
+            this.btn_sacar.Text = "Sacar";
+            this.btn_sacar.UseVisualStyleBackColor = true;
+            this.btn_sacar.Click += new System.EventHandler(this.btn_sacar_Click);
+            // 
+            // btn_depositar
+            // 
+            this.btn_depositar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_depositar.Location = new System.Drawing.Point(9, 103);
+            this.btn_depositar.Name = "btn_depositar";
+            this.btn_depositar.Size = new System.Drawing.Size(140, 44);
+            this.btn_depositar.TabIndex = 9;
+            this.btn_depositar.Text = "Depositar";
+            this.btn_depositar.UseVisualStyleBackColor = true;
+            this.btn_depositar.Click += new System.EventHandler(this.btn_depositar_Click);
             // 
             // txt_valor
             // 
@@ -160,36 +194,6 @@
             this.label5.Size = new System.Drawing.Size(56, 20);
             this.label5.TabIndex = 5;
             this.label5.Text = "Valor:";
-            // 
-            // btn_depositar
-            // 
-            this.btn_depositar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_depositar.Location = new System.Drawing.Point(9, 103);
-            this.btn_depositar.Name = "btn_depositar";
-            this.btn_depositar.Size = new System.Drawing.Size(140, 44);
-            this.btn_depositar.TabIndex = 9;
-            this.btn_depositar.Text = "Depositar";
-            this.btn_depositar.UseVisualStyleBackColor = true;
-            // 
-            // btn_sacar
-            // 
-            this.btn_sacar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_sacar.Location = new System.Drawing.Point(155, 103);
-            this.btn_sacar.Name = "btn_sacar";
-            this.btn_sacar.Size = new System.Drawing.Size(140, 44);
-            this.btn_sacar.TabIndex = 10;
-            this.btn_sacar.Text = "Sacar";
-            this.btn_sacar.UseVisualStyleBackColor = true;
-            // 
-            // btn_exibir_saldo
-            // 
-            this.btn_exibir_saldo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_exibir_saldo.Location = new System.Drawing.Point(107, 182);
-            this.btn_exibir_saldo.Name = "btn_exibir_saldo";
-            this.btn_exibir_saldo.Size = new System.Drawing.Size(140, 58);
-            this.btn_exibir_saldo.TabIndex = 11;
-            this.btn_exibir_saldo.Text = "Exibir Saldo";
-            this.btn_exibir_saldo.UseVisualStyleBackColor = true;
             // 
             // label6
             // 
