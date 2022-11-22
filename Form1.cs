@@ -45,7 +45,7 @@ namespace Aula13
 
         private void btn_exibir_saldo_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Titular: " +ContaCorrente.Titular+"\nAgência: " +ContaCorrente.Agencia+ "Número da conta: "+ContaCorrente.numero+"\nSaldo: "+ContaCorrente.Saldo.ToString("C")+"\nValor do juros: "+ContaCorrente.Calcular().ToString("C"));
+            MessageBox.Show("Titular: " +ContaCorrente.Titular+"\nAgência: " +ContaCorrente.Agencia+ "\nNúmero da conta: "+ContaCorrente.numero+"\nSaldo: "+ContaCorrente.Saldo.ToString("C")+"\nValor do juros: "+ContaCorrente.Calcular().ToString("C"),"Mensagem!",MessageBoxButtons.OK,MessageBoxIcon.Information);
         }
     }
 }

@@ -15,7 +15,7 @@ namespace Aula13
 
         public void Sacar(double valor)
         {
-            if ((Saldo + limite) <= valor)
+            if ((Saldo + limite) >= valor)
             {
                 Saldo-=valor;
             }
